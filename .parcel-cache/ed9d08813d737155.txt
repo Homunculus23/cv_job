@@ -1,0 +1,4 @@
+3
+39D:\Study\code\html_css\cv_job\README.MD133094626377559416 0
+41D:\Study\code\html_css\cv_job\resume.html133094623222919096 0
+39D:\Study\code\html_css\cv_job\style.css133085540040145634 0
