@@ -1,0 +1,218 @@
+/*css reset*/
+* {box-sizing: border-box;margin: 0;padding: 0;}
+a {color: inherit; text-decoration: none;}
+img {max-width: 100%; max-height: 100%;}
+*::before, *::after{box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+
+/*css common*/
+.pill {
+    margin: auto;
+}
+
+.layout {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*page css*/
+body{
+    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+    font-size: 16px/1.5;
+    color: #333;
+}
+  
+.wrapper {
+background-color: #ececec;
+margin-top: 30px;
+margin-bottom: 30px;
+padding-top: 40px;
+}
+
+.aside {
+float: left;
+width: 280px;
+}
+
+.aside .user {
+text-align: center;
+padding-bottom: 20px;
+}
+
+.aside .user h1{
+font-size: 40px;
+}
+
+.aside .user h1::after {
+content: '';
+display: block;
+width: 60px;
+border-top: 1px solid #d6d6d6;
+margin: 16px auto;
+}
+
+.aside .user::after {
+content: '';
+display: block;
+width: 0;
+height: 0;
+margin-top: 20px;
+border-top: 20px solid #d6d6d6;
+border-bottom: 20px solid transparent;
+border-right: 140px solid #d6d6d6;
+border-left: 140px solid transparent;
+}
+
+.aside .contact {
+padding: 20px;
+}
+
+.aside .contact li {
+border-bottom: 1px solid #d6d6d6;
+list-style: none;
+line-height: 40px;
+}
+
+.aside .contact .iconfont {
+border-right: 1px solid #d6d6d6;
+padding-right: 10px;
+margin-right: 10px;
+padding-left: 10px;
+display: inline-block;
+font-size: 20px;
+color: #7bbaaa;
+}
+
+.aside .skills {
+background: #7bbaaa;
+padding: 20px;
+color: #fff;
+}
+
+.aside .skills dt {
+color: #eee;
+margin-top: 20px;
+}
+
+.aside .skills dd {
+height: 4px;
+background: #74c5b5;
+border-radius: 2px;
+margin-top: 10px;
+}
+
+.aside .skills .mastery {
+height: 4px;
+background: #fff;
+display: block;
+border-radius: 2px;
+}
+
+.aside .others h2 {
+margin: 20px 0 0 20px;
+}
+
+.main {
+margin-left: 280px;
+background: #fff;
+padding: 40px;
+margin-right: 20px;
+}
+
+.main .intro {
+overflow: auto;
+}
+.main .intro img {
+width: 80px;
+height: 80px;
+float: left;
+}
+
+.main .intro p {
+margin-left: 120px;
+}
+
+.section .pill {
+float: left;
+margin-top: 5px;
+}
+
+.section h2{
+font-size: 40px;
+color: #d9d9d9;
+text-align: center;
+margin-top: 30px;
+}
+
+.section .more {
+margin-left: 150px;
+border-left: 1px solid #eee;
+}
+.section h3 {
+color: #666;
+font-size: 20px;
+font-weight: normal;
+}
+.section h3 strong{
+color: #111;
+font-weight: bold;
+}
+
+.section h3::before {
+content: '';
+display: inline-block;
+width: 6px;
+height: 6px;
+border-radius: 6px;
+border: 2px solid #7bbaaa;
+margin-right: 20px;
+position: relative;
+left: -5px;
+}
+
+.section h4 {
+color: #111;
+margin-top: 20px;
+margin-left: 40px;
+}
+
+
+.section .more ul {
+margin-left: 50px;
+padding-bottom: 20px;
+}
+.section .more li {
+color: #666;
+font-size: 14px;
+}
+
+
+@media print {
+.aside {
+    width: 200px;
+}
+.main {
+    margin-left: 200px;
+}
+.aside .user::after {
+border-right-width: 100px;
+border-left-width: 100px;
+}
+.pill {
+    display: none;
+}
+
+.section .more {
+    margin-left: 20px;
+}
+
+.wrapper {
+    margin: 0;
+}
+}
